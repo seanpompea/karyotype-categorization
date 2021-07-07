@@ -1,4 +1,4 @@
-karyoclassifier
+Karyotype Parsing and Categorization
 ===============
 
 This pipeline gets data from `dm_mpn..karyotypes`. For each karyotype
