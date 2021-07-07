@@ -1,0 +1,25 @@
+wishlist
+~~~~~~~~~~~~~~~~~~~
+o confirm handling 'iso' correctly (see AGT ch 8 summary).
+o handle a dash that is not a simple ascii minus: (e.g., –)
+  (i.e., unicode: U+2212)
+  more: https://www.fileformat.info/info/unicode/char/2212/index.htm
+o handle all 'der' format variations. (see AGT ch8 summary).
+o backslsah  
+o fish / nuc ish -- assess as part of abnormality count and/or explicitly
+  remove from string before parsing.
+o ensure handle both numerical styles properly: eg +10,inv(10) vs +inv(10).
+o ensure handle 'or' when looking for particular band.
+o ensure handle '?' on band etc.
+o ensure handle all '~' scenarios.
+o 'c' symbol
+o handle 'X' or 'Y' in places where chromosome number usually is.
+o strategy for in-karyotype whitespace
+o ensure can handle t with 3 or 4 chr
+o '\R\' -- what is this
+o fix typo where colon used but meant semicolon
+#
+
+
+
+

@@ -1,0 +1,650 @@
+CYTOGENETICS, KARYOTYPES, AND ISCN NOTATION
+
+==============================================[ Cytogenetics and Cell Division ]
+~~~~~~~~~~~~~~~ * Basic Terms *
+
+cytogenetics:
+chromosome:
+chromatin:
+chromatid:
+homologue: one part of a chromosome pair (eg 'chromosome 21 homologues')
+diploid: have a pair of each chromosome (e.g., somatic cell)
+haploid: have only one of each chromosome (e.g., sex cell aka gamete)
+aneuploid: "involve gains or losses of less than an entire haploid set of 23
+chromosomes" (AGT p429). E.g., trisomy 21 (a single extra chromosome).
+euploidy: "used to refer to the loss or gain of one or more entire haploid sets
+of 23 chromosomes" (AGT p429). Examples:
+  - triploid: contains 96 chromosomes
+  - tetraploid: has 92 ("two extra haploid sets" (AGT p429)).
+  - Hyperdiploidy: greater than 48 chromosomes
+Centromere: Dividing pivot of the chromosome
+telomere:
+p arm: short arm of a chromosome
+q arm: the long arm of a chromosome.
+
+acrocentric: "Having the centromere located near one end of the chromosome so
+that one chromosomal arm is long and the other is short." -- wordnik
+
+
+mosaic vs nonmosaic:
+  - mosaic means a person has two or more genotypes of cells; 
+  the detection of an abnormality could be considered 'less serious' if it comes
+  from a mosaic individual vs a nonmosaic individual.
+  - "The presence of two or more cell lines within a single individual, each of
+  which is derived from the same original cell line, represents mosaicism. When
+  the abnormal cell line is distributed throughout the body along with a normal
+  cell line, a generalized mosaicism is said to be present and the clinical
+  phenotype is often milder than that seen in association with the comparable
+  nonmosaic aneuploidy." (AGT p438).
+
+meiosis:
+  - "only occurs in germ cells" (AGT p430)
+
+AML: acute myeloid leukemia (blood cancer)
+MDS: myelodysplastic syndromes
+MF: myelofibrosis
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Mitosis -- Cell Division *
+
+4 phases:
+  1. Prophase
+    "Chromatin condenses into chromosomes." (Nav 4)
+  2.Metaphase:
+    Chromosomes line up at equatorial plate
+  3.Anaphase
+  4. Telophase
+
+=======================================[ Chomosome Abnomalities & ISCN Symbols ]
+
+- constitutional vs acquired: constitutional means effectively from birth
+  whereas 
+
+== numerical abnormality ===
+
+trisomy: addition of a whole chromosome
+- "only the nonmosaic trisomies involving chromosomes 13, 18, and 21, as well
+as three sex chromosome trisomies, XXX, XXY, and XYY, are considered to be
+compatible with survival." (AGT p430)
+
+monosomoy: loss of a whole chromosome
+- monosomy X is only survivable monosomy.
+
+"When normal chromosomes are replaced by structurally altered chromosomes, the
+normal ones should not be recorded as missing." (AGT p365).
+
+== structural abnormality ==
+
+Structural abnormalities include deletion, inversion, etc.
+
+~~~~~~~~~~
+*add :: addition
+- "Added material on chromosomes is material that is unidentifiable as to its
+chromosomal origin and which is translocated to a known chromosome."
+(CA p90).
+- eg: 
+    46,XY,add(14)(q32) 
+    "added material on the long arm of chromosome 14"
+    (AC p90)
+
+~~~~~~~~~~
+*del :: deletion: "associated with myelodysplastic syndromes and acute myeloid
+leukemia"; lots of lost genes as a result (Nav 14).
+  - eg: del(5)(q21q34)
+
+~~~~~~~~~~
+:: dmin -- "double minute"
+See AGT 8.7.8 p402, and also p424.
+intra? TODO
+
+Ex: (AGT p402)
+46,XY,5dmin[20] using an absolute numerical value indicates that all cells had 5 dmins;
+46,XY,~22dmin[20] indicates that the cells showed approximately 22 dmins (as a mean number) per cell
+ 46,XY,5~ 22dmin[20]
+
+
+~~~~~~~~~~
+*inv :: inversion:
+  paracentric inversion: inversion of a segment on a single arm.
+  pericentric inversion: inversion of a segment that includes centromere.
+  eg: inv(3)(q24q27)
+
+~~~~~~~~~~
+*inverted duplication (inv dup):
+- "The isodicentric 15q is also described as an inverted duplication (inv dup)
+and may be written either way. However, recent studies have shown a possible
+mechanism of this chromosome as the consequence of recombination of homologous
+chromosome 15s; therefore, idic is probably a better choice for the
+nomenclature." (CA p101). 
+
+~~~~~~~~~~
+:: fis -- centris fission
+:: intra
+
+Not covered in AGT ch 8.
+See: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2693553/
+Ex (from link);
+
+    47,XX,-11,+fis(11)(p10),+fis(11)(q10)
+
+~~~~~~~~~~
+*isodicentric (idic):
+TODO
+See AC pp101, 102.
+
+~~~~~~~~~~
+*translocation (t):
+  balanced: a translocation as one would intuit.
+  unbalanced: not sure exactly what this means yet
+  eg: t(9;22)(q34;q11)
+      t(8;9;11)(q12;p24;p12) (humpath.com)
+
+~~~~~~~~~~
+*dicentric chromosome (dic):
+See Dav 19.
+Results when two segments from unique chromosomes, both containing a
+centromere, attach together. The other material (from the original chromosomes)
+are considered deleted material.
+
+~~~~~~~~~~
+*i :: isochromosome:
+See Dav 20., CA p98.
+Two chromosomes split at their centromeres, the parts swap and two new 
+chromosomes develop; the first is the combined q arms, the other is the combined
+p arms.
+- Mosaic isochromosome (12p) -- Pallister–Killian syndrome 
+    47,XX,+i(12)(p10)[12]/46,XX[8]
+  " extra isochromosome consisting of the short arm of chromosome 12,
+  resulting in tetrasomy (4 copies)" (AC p99).
+- seems to qualify as numerical: "The i(12p) is associated with
+  Pallister–Killian syndrome and is generally seen as a supernumerary
+  chromosome, thereby resulting in tetrasomy 12p, and is predominantly seen in the
+  mosaic form." (AC p98).
+- isochromosome 21:
+    46,XX,i(21)(q10).
+  (AC p100)
+
+~~~~~~~~~~
+*psu dic :: pseudodicentric
+See AGT 8.5.2 p383
+eg from AGT p383:
+  45,XY,psu dic(20;17)(q11.2;q11.2)
+  "The centromere of chromosome 20 is the only active one; therefore, it will be
+  described first in the short karyotype, irrespective of karyotype order
+  priority."
+
+~~~~~~~~~~
+*r :: ring chromosome:
+See Dav 21.
+A single chromosome with some deleted material at both ends -- that is, two
+breaks in the chromosome -- forms a ring due two both ends adhesing to each other. 
+
+See also: '+r', which is ring of unknown origin, below.
+
+~~~~~~~~~~
+*dup -- duplication:
+See Dav 22.
+One or more segments of a chromosome are repeated (within the chromosome).
+
+~~~~~~~~~~
+*der -- derivative:
+See Dav 23.
+"Used when only one chromosome of a translocation is present or
+One chromosome has two or more structural abnormalities"
+
+
+
+
+~~~~~~~~~~
+Robertsonian translocation:
+- "Robertsonian translocation (ROB) is the most common form of chromosomal
+rearrangement in humans where the participating chromosomes break at their
+centromeres and the long arms fuse to form a single, large chromosome with a
+single centromere. In humans, Robertsonian translocations generally occur in the
+five acrocentric chromosome pairs, namely 13, 14, 15, 21 and 22."
+(https://en.wikipedia.org/wiki/Robertsonian_translocation)
+- Example kar:
+    
+    46~49,XX,+8[26],der(13;21)(q10;q10)[21],+16[17],+21[17][cp30]
+
+  The above includes:
+    - gain of chromosomes 8, 16 and 21
+    -  a robertsonian translocation between the long arms of chromosomes 13 and 21.
+
+  -- from: CA p108.
+- sometimes might use 'rob' symbol (apparently; see IR).
+
+
+~~~~~~~~~~
+:: *Question-mark '?' symbol: 
+
+  46,XY,del(5)(p?15.1)   (AGT p397)
+
+~~~~~~~~~~
+:: 'inc':
+"The incomplete (inc) symbol at the end indicates that additional
+inconsistencies were also being questioned, but could not be definitively or
+clonally identified at this time. " (AGT 398).
+
+  47,XY,+3,-7,-20,+der(?)t(?;1)(?;p11.2),+mar,inc[20] (AGT p398)
+
+Presence of ',inc' slug is sufficient to increment abn count.
+
+~~~~~~~~~~
+:: 'or':
+  eg., 46,XY,add(16)(p13.3 or q24) (AGT p399)
+
+~~~~~~~~~~
+:: '~': Approximation (~) range
+  eg 
+    46,XY,del(16)(p13.1~13.3) (AGT p400)
+
+~~~~~~~~~~
+:: '+r':  Rings of unknown origin (r) (AGT 8.7.6)
+  Can have multiple, eg +3r
+  examples:
+    47,XY,-18,+21,+r
+    48,XY,-18,+3r[20]
+    48,XY,+r1,+r2[20]
+      -- In the above, two rings are clonally distingiushable
+         so they are 'subscripted' , AGT p401
+    49,XY,+r1x2,+r2[20]
+      -- Similary, in the above, two ring types, but there are 
+         two copies of the first variation, so it is indicate
+         with 'x' indicating 'multiply' and then '2'. AGT 401
+
+~~~~~~~~~~
+*'+mar': "marker" is a chromosome of unknown origin (AGT 8.7.7 p401)
+  Has similar syntax variations to '+r' above.
+
+'''
+
+~~~~~~~~~~~~~~~~~~~~~~~
+Derivatives
+~~~~~~~~~~~~~~~~~~~~~~~
+
+See AGT p396.
+The 'der' token is often followed with further information -- i.e., a structural
+event. Other times, it doesn't. Whole-arm derivates are situations where 
+the token is standalone:
+  o acrocentric whole-arm translocations
+
+      45,XY,der(13;21)(q10;q10)           -- AGT 396
+      46,XY,der(13;21)(q10;q10),+21       -- AGT 397
+      46,XY,der(13;21)(q10;q10),+21       -- AGT 398
+  
+  o Nonacrocentric whole arm derivative
+
+      46,XX,+9,der(9;18)(p10;q10)
+
+In both cases, the presence of the '+9' or '+21' slug is sufficient to 
+count as an abnormality.
+
+
+Derivative Symbols
+
+   'der':   'derivative'              # AGT 8.6 p 394
+  ,'ider':  'isoderative'             # AGT 8.6.3 p 395
+  ,'neo':   'neoderivative'           # AGT 
+
+Note: analysis of WCM dataset shows _no_ usage of 'neo'.
+
+
+
+
+=============================================[Chromosome Preparation Techniques]
+
+o "karyotyping of neoplastic cells is currently a mandatory investigation for
+all newly diagnosed leukemias, owing to its usefulness in diagnosis,
+classification, and prognostication" (CCG 2)
+
+o "It has overcome many of the drawbacks of chromosome analysis, such as poor
+qual- ity metaphases of cancer cells, low mitotic index, low specimen cell
+yield, and other unpredictable technical difficulties." (CCG 2).
+
+o Who does this? A clinical cytogeneticist working in a lab.
+  - https://www.genome.gov/genomiccareers/career.cfm?id=11
+  - Requires an MD or PhD + board certification.
+    - https://www.genome.gov/genomiccareers/career.cfm?id=11
+  - "The main goal of the cancer cytogenetic laboratory is to select
+    appropriate FISH techniques that are most useful and informative for a
+    particular study and perform thorough analyses to arrive at an interpretation
+    that is useful for research and diagnostic purposes." (CCG 7)
+
+"Although conventional staining may seem outdated, its value should not be
+overlooked. For example, it can be very useful in studying certain structural
+abnormalities, such as, satellite presence (single or multiple), dicentric
+chromosomes, ringchromosomes, fragments, double minutes, fragile sites, breaks
+and gaps. " (AGT p219-220)
+
+o Molecular Cytogenetics and FISH (Fluorescence in situ hybridization)
+  - "Molecular cytogenetics involves the use of a series of FISH and FISH-based
+    techniques, in which DNA probes are labeled with different colored
+    fluorophores to visualize one or more specific regions of the genome" (CCG 5)
+  - can help detect numerical + structural abnormalities
+  - very useful in prognosis of hematologic cancers (CCG 5)
+  - "has greatly enhanced the effi- ciency and accuracy of karyotype analysis
+    by supplementing the technical pitfalls of karyotyping and molecular
+    genetic technologies" (CCG 2)
+  - " particularly indispensable when karyotypic analysis may be difficult in
+    the largely quiescent cells of certain hematologic malignancies such as the
+    chronic lymphoid disorders." (CCG 5)
+
+o PCR (polymerase chain reaction)
+
+
+
+
+=====================================================================[concepts]
+
+* composite karyotype *
+
+
+
+
+======================================================[ More on ISCN Notation ]
+
+SEE ALSO: Chromosomal Abnormalities (above).
+
+ISCN stands for: International System for Human Cytogenomic Notation.
+o It is more than just 'karyotypes' as it covers FISH and "genomic (SNP-based
+microarray" as well. (CCG 303).
+o " In the clinical cytogenetics community, interpretation and sci- entific
+communication is often facilitated by universally accepted nomenclature with
+precisely defined terms and syntax conventions that minimize complexity and add
+precision to the process." (CCG 8)
+o ISCN 2016 version: "offers standard nomencla- ture that is used to describe
+any genomic rearrangement identified by techniques ranging from karyotyping to
+FISH, microarray, vari- ous region-specific assays, and DNA sequencing" (CCG 9)
+o Debate: "whether two cells with the same loss of a single chromosome or one
+cell with a gain of a single chromosome in a composite karyotype should be
+counted and included in the size of the clone is still contradictory among
+different laboratories all over the world since then" (CCG 9)
+
+At a high level (Dav 24):
+
+In sequence:
+– the overall number of chromosomes identified
+– sex chromosomes
+– affected chromosomes
+– type of abnormalities described in shorthand
+– chromosomal band location
+– In brackets, the number of cells with a given karyotype
+
+Simple examples (Dav 24):
+
+46, XX; t(9;22)(q13;q22) [20]
+47, XY; +21 [12]
+46, XX; inv 16(q13; q21) [20]
+45, XY; -5 [18]; 46, XY [2]
+46, XY; -5 (q13) [4]; 46, XX [16]
+
+Comment on above examples: 
+- 3rd example does not use parantheses around the '16' (just after 'inv').
+- the above 5 kars has spaces in them; suggestion: remove all spaces
+as a final prep step before parsing. 
+
+~~~~~~~~~~~~~~~~~~~~~~~
+* various abbrevations *
+~~~~~~~~~~~~~~~~~~~~~~~
+
+:: idem, sl, sdl 
+
+"The abbreviations idem, sl, sdl include the sex-chromosomes, and therefore the
+sex chromosomes are not described again" (CCG 304)
+
+idem and sl appear to be equivalent, per AGT 8.9.4 p406.
+
+:: cp
+
+Every effort should be taken to describe the clones and sub-clones so that
+clonal evolution is evident. However, in case this is not possible one can use
+the composite karyotype (cp)." (CCG 305)
+
+:: de novo
+- "Designates a chromosome abnormality which has not been inherited." (IR p2).
+
+:: "LOH" -- loss of heterozygosity
+
+'''
+See AGT 8.5.13 p 394. Not an event but a descriptor
+that is associated with upd event.
+Notably, AGT does not provide an example.
+'''
+
+:: "dir dup" -- direct duplication
+
+'''
+You occasionally see the event symbol 'dir dup'
+in literature for a detailed karyotype. 
+E.g., partial trisomy 21 (Down syndrome) might
+have a kar of:
+    46,XY,dir dup(21)(qll.205-+q22.300) 
+Source: Rahmani et al. Critical role of the D21S55 region on chromosome 21 in
+the pathogenesisofDown syndrome. 1989.
+
+Analysis of WCM data set shows _no_ usage of this symbol.
+'''
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Symbols describing constitutional origin, etc.#
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# See AGT 8.5.8 p 388
+'''
+These symbols annotate an abnormality with 'metadata', in essence.
+
+"These symbols of parental origin are generally placed without a space directly
+after the event's description, [...] however, "a space will be used when it
+follows another symbol, for example, +r mat."
+
+    eg: 46,XY,del(22)(q11.2q11.2)mat
+
+    '+r mat' means ring of unknown origin, but of maternal provenance.
+
+They include:
+  mat               -- maternal
+  pat               -- paternal
+  inh               -- inherited but not sure which
+  dn (or 'de novo') -- neither birth parent
+  c                 -- constitutional
+
+"Neoplastic karyotypes will use a "c" to distinguish a constitutional event,
+for example, +21c"
+'''
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* out of scope (for trad karyo parsing) *
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:: ish, nuc ish
+
+:: arr (i.e., array nomenclature)
+
+Ex: arr(1-22)x2,(XY)x1
+
+A longer example: 
+  arr 4q32.2q35.1(163,146,681-183,022,312)x1
+This is 'Deletion of 4q' (apparently). (Camp deck p26).
+
+~~~~~~~~~~~~~~~~~~~~~
+chrom/arm/band syntxx
+~~~~~~~~~~~~~~~~~~~~~
+
+From AGT p 363:
+
+  7q11.21
+  .... .^--------- Level within sub-band
+  ...  ^---------- Sub-band
+  .. ^------------ Landmark band 
+  . ^------------- Landmark region
+   ^-------------- Arm
+  ^--------------- Chromosome
+
+"Band 7q11.2 demonstrates the breakdown of a sub‐band into three further band
+levels: q11.21, q11.22, and q11.23" (AGT p363).
+... meaning, 11.2 is not distinct from 11.21, but rather the former is broader/
+less-specific.
+
+  
+
+
+
+====================================================[karyotype string examples]
+
+
+
+```````````
+o "53 year old man presented with pancytopenia and was found to have acute
+erythroleukaemia" (Camp deck pp22-23)
+
+Ways of describing:
+
+  46,XY,inv(11)(p15q23)[7]/46,XY[13]
+
+  46,XY,inv(11)(p15q23)[7]/46,XY[13].ish inv(11)(p15)(3’MLL+)(q23)(5’MLL+,3’MLL+)
+
+  46,XY,inv(11)(p15q23)[7]/46,XY[13].ish inv(11)(p15)(3’MLL+)(q23)(5’MLL+,3’MLL+).nuc ish(5’MLLx2,3’MLLx3)(5’MLL con 3’MLLx2)
+
+(Note: original source has a carriage return between '.' and 'nuc' in the 3rd
+example.)
+
+Comment: for simple karyotype parsing, we would search for the presence of
+'ish' (or perhaps 'nuc ish') and cut from there to end of string. 
+
+```````````
+o "Patient with MDS" (Camp deck p27)
+
+  46,XY,del(20)(q11.2)[20].arr 5q31.2(137,736,066x2,137,782,447‐138,987,704x1,139,017,982x2),20q11.22q11.32(33,785,207x2,33,852,818‐56,767,187x1,56,698,692x2)
+
+Comment: here, for karparsing, index of '.arr' onward can be cut.
+
+```````````
+o array karyotype
+
+Example (Camp deck 28) -- this is just a portion of an array karyotype:
+  2p11.2(89,315,265‐89,325,297)x0,2p11.2(89,613,887‐89,624,078)x0,
+
+Comment: this shows that karparsing (via regex or other) should make sure that
+the paranthesis is present and facing the correct direction to prevent 'false
+positive' in the case of eg the above array example.
+
+
+==========================================[Significant Chromosomal Abnomalities]
+
+o Philadelphia (Ph) Syndrome
+  - t(9:22) on Ph chromosome.
+  - hallmark of CML (chronic myeloid leukemia)  (CCG 1)
+  - discovery in 1960 "showed for the first time that cancer resulted from a
+    specific genetic abnormality" (CCG 1)
+  - imatinib -- life-saver for CML.
+    - brandname: Glivec.
+
+o Turner Syndrome
+  - Loss of second X chromosome
+  - "greater than 99% of all conceptions die in utero" (AGT p430)
+  - Kar: 45,X
+      variation: 45,X0
+  - ref: https://ghr.nlm.nih.gov/condition/turner-syndrome
+
+o Down Syndrome
+  - addition of an extra chromosome 21. (trisomy 21).
+  - eg:  47,XX,+21
+  - A trisomy 21 situation rsulting in Down's can occur from an 
+    isochrosomome abnormality, eg:
+      46,XX,i(21)(q10).
+    (source: AC p100). The above kar is an iso of the long arm (that is, the q
+    arm).
+
+o Edwards Syndrome - trisomy 18
+
+o Patau Syndrome - trisomy 13
+
+o Klinefelter Syndrome
+  - male with 2+ chromosomes
+  - Eg: 47,XXY
+  - a kind of trisomy; generally not harmful to health.
+
+o acute promyelocytic leukemia (M3)
+favorable prognosis
+t(15; 17)(q22;q12)
+
+o AML,subtype M4eo
+favorable prog
+inv(16)(p13;q22)
+
+o acute lymphoblastic leukemia (ALL)
+
+o Chronic myeloid leukemia
+t(9;22)(q11;q34)
+
+o myelodysplastic syndromes
+ref: https://ghr.nlm.nih.gov/condition/5q-minus-syndrome
+5q- syndrome
+- this MDS associated with isolated del(5q31-33) chromosome
+abnormality; is a subtype of low-risk MDS. (Source:
+https://www.sciencedirect.com/topics/medicine-and-dentistry/chromosome-5q-deletion-syndrome)
+Comment: 'del(5q31-33) appears to be shorthand; is it valid ISCN?
+
+o Cri du Chat Syndrome
+  46,XY,del(5p15)
+
+
+
+
+
+==================================================================[ References ]
+
+
+AGT:
+Arsham, et al., editors. The AGT Cytogenetics Laboratory Manual, 4th Edition. 
+Wiley Blackwell, 2017.
+
+CA:
+Zneimer, S.M. Cytogenetic Abnormalities. Wiley Blackwell, 2014.
+
+Camp deck:
+Campbell, L. Standardised definitions and terminology for human cytogenetic
+variants. Jul 11, 2011. (pdf deck; found online autumn 2018).
+
+CCG:
+Wan, T.S.K, editor. Cancer Cytogenetics: Methods and Protocols. Springer 2017
+(green and blue cover).  DOI 10.1007/978-1-4939-6703-2
+-contains information but not an ISCN reference.
+
+IR:
+ISCN Rules for Listing Chromosomal Rearrangements 2001 (pdf) -- Appendix 4C to
+Current Protocols in Human Genetics (1998).
+
+Nav:
+Navarro, W. Cytogenetics_ Nomenclature and Disease. 2008. (pdf deck; found
+online autumn 2018).
+
+
+
+================================================================[ other links ]
+
+Haase 2008. Cytogenetic features in myelodysplastic syndromes.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2413090/
+
+Cytogenetic Nomenclature sheet -- radford.edu.
+https://www.radford.edu/~rsheehy/cytogenetics/Cytogenetic_Nomeclature.html
+
+Amoeba Sisters Video: Chromosomes and Karyotypes
+https://www.youtube.com/watch?v=mBq1ULWJp_M
+
+Cytogenetic Nomenclature table (radford.edu):
+https://www.radford.edu/%7Ersheehy/cytogenetics/Cytogenetic_Nomeclature.html
+
+O'Connor et al. Chromosomal Abnormalities: Aneuploidies, (nature.com).
+http://origin.www.nature.com/scitable/topicpage/chromosomal-abnormalities-aneuploidies-290
+
+ISCN nomenclature of chromosomal anomalies (examples; 2008) (humpath.com).
+https://www.humpath.com/spip.php?article13862
+
+Human Chromosomal Disorders (biology.iupiu.edu, 2003).
+https://www.biology.iupui.edu/biocourses/N100/2k2humancsomaldisorders.html
+
+
+
