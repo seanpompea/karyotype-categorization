@@ -1,8 +1,9 @@
-Karyotype Parsing and Categorization
+Cytogenetic karyotype nomenclature parsing and clinical risk categorization
 ===============
 
-This pipeline gets data from `dm_mpn..karyotypes`. For each karyotype
-string, it processes it for seven risk schemas:
+Certain cytogenetic abnormalities are known to play a role in myeloproliferative neoplasm diseases. Automated parsing and categorization of cytogenetic nomenclature datasets can aid in research, phenotype development, and subsequent clinical/treatment decisions for patients.
+
+This pipeline parses cytogenetic karyotype strings (in ISCN notation) to identify abnormalities and subsequently applies clinical risk categories using the following categorizaton schemes:
 
 * CALGB (Cancer and Leukemia Group B) Risk Classification
 * AML MRC 1998 Risk Classification
@@ -10,9 +11,7 @@ string, it processes it for seven risk schemas:
 * AML SWOG (Southwest Oncology Group) Risk Classification   
 * MDS 5-Group Risk Classification 
 * MDS IPSS Risk Classification 
-* MF DIPSS+ Risk Classification 
-
-It loads the resulting dataset into `dm_mpn..karyotype_classifications`.
+* MF DIPSS+ Risk Classification
 
 ## About ISCN notation
 
