@@ -3,7 +3,7 @@ Cytogenetic karyotype nomenclature parsing and clinical risk categorization
 
 Certain cytogenetic abnormalities are known to play a role in myeloproliferative neoplasm diseases. Automated parsing and categorization of cytogenetic nomenclature datasets can aid in research, phenotype development, and subsequent clinical/treatment decisions for patients.
 
-This pipeline parses cytogenetic karyotype strings (in ISCN notation) to identify abnormalities and subsequently applies clinical risk categories using the following categorizaton schemes:
+This pipeline parses cytogenetic karyotype strings (in ISCN notation) to identify abnormalities and subsequently apply clinical risk categories using the following categorizaton schemes:
 
 * CALGB (Cancer and Leukemia Group B) Risk Classification
 * AML MRC 1998 Risk Classification
