@@ -1,9 +1,9 @@
 Cytogenetic karyotype nomenclature parsing and clinical risk categorization
 ===============
 
-Certain cytogenetic abnormalities are known to play a role in myeloproliferative neoplasm diseases. Automated parsing and categorization of cytogenetic nomenclature datasets can aid in research, phenotype development, and subsequent clinical/treatment decisions for patients.
+Certain cytogenetic abnormalities are known to play a role in myeloproliferative neoplasm diseases. Automated parsing and categorization of cytogenetic nomenclature datasets can aid in research, phenotype development, and subsequent clinical decision-making.
 
-This pipeline parses cytogenetic karyotype strings (in ISCN notation) to identify abnormalities and subsequently apply clinical risk categories using the following categorizaton schemes:
+This pipeline parses a data set of cytogenetic karyotype strings (in ISCN notation) to identify abnormalities and subsequently apply clinical risk categories using the following categorizaton schemes:
 
 * CALGB (Cancer and Leukemia Group B) Risk Classification
 * AML MRC 1998 Risk Classification
@@ -13,30 +13,17 @@ This pipeline parses cytogenetic karyotype strings (in ISCN notation) to identif
 * MDS IPSS Risk Classification 
 * MF DIPSS+ Risk Classification
 
-## About ISCN notation
+## About ISCN notation 
 
 A collection of notes on ISCN karyotype string notation can be found
-in the include file [knotes.txt](knotes.txt).
+in the file [knotes.txt](knotes.txt).
 
-## Setup and running
+## Setup and running using a database
 
 Uses Python 2.7.
 
-:alert: The current approach does _not_ use an encrypted database connection. To
-ensure an encrypted connection, you'd need to change the database driver/library
-to something else; some more details about this topic are here in this
-Nexus article:
-
-* https://nexus.weill.cornell.edu/display/ARCH/Best+Practices+for+Establishing+Secure+Database+Connections+Using+Python
-
-Note that the above article focuses on Python 3 (this app is written in
-Python 2). 
-
-Ok, moving on to the actual steps.
-
 Install freetds (or equivalent), which pymssql (which gets installed by the
-sqlsrvwrapper) uses. There might ben an alternate approach in terms of 
-what to install here but this worked for me:
+sqlsrvwrapper lib) uses.
   
     brew install freetds
 
@@ -54,7 +41,7 @@ Then install dependencies:
 
 Create the database config file at this location:
 
-    enclave/p06-info.json
+    enclave/mydb-info.json
 
 That file should have the structure/content as documented here:
 
@@ -69,6 +56,10 @@ Start a repl:
 Then, to run the pipeline, run these commands:
 
     >>> import bulk as b
-    >>> b.trunctable('p06', 'dm_mpn..karyotype_classifications')
-    >>> b.db2db('p06', 'p06', 'dm_mpn..karyotype_classifications')
+    >>> b.trunctable('mydb', 'dm_mpn..karyotype_classifications')
+    >>> b.db2db('mydb', 'mydb', 'dm_mpn..karyotype_classifications')
 
+## Setup and running using CSV files
+
+There are additional functions in `bulk.py` for working with CSVs; take a look at the
+code for more details.
